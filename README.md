@@ -9,14 +9,33 @@ I build deployable software where **AI, geospatial data, and real-world operatio
 ## What I build
 
 - **Applied AI products** — grounded knowledge assistants, speech and voice workflows, computer vision integrations, and human-reviewable automation.
+- **Open-source developer tools** — a cross-platform terminal & remote-access workspace for AI CLIs, an MQTT capture/replay debugger, and PE/.NET static analysis tooling.
 - **GIS & resilience platforms** — water monitoring, sensor time series, CCTV workflows, disaster-response systems, and 3D geospatial visualization.
 - **IoT & operational automation** — MQTT data flows, observation-station tools, factory monitoring APIs, scheduled jobs, file relays, and health tracking.
 - **Full-stack systems** — ASP.NET Core APIs, React/TypeScript frontends, background workers, authentication, PostgreSQL/SQL Server, and legacy-system modernization.
 - **Production delivery** — Docker Compose, reverse proxies, health checks, CI, automated tests, observability, secure configuration, and repeatable deployment.
 
-## Featured public project
+## Featured public projects
 
-### [StoryVoice](https://github.com/NickYCLin/StoryVoice) — AI Story Director
+### [LatticeTerm](https://github.com/NickYCLin/lattice-term) — AI CLI & Remote Access Workspace
+
+A cross-platform desktop workspace that unifies local AI coding agents (Codex, Claude Code, Gemini CLI and more) with SSH, SFTP, tunnels, Web RDP, VNC, and end-to-end encrypted remote desktop.
+
+- Tauri 2, Rust, React, and TypeScript, shipping signed installers for Windows, Linux, and macOS with in-app auto-update
+- AI Agent Fleet: 12 local LLM CLIs in native PTYs, batch prompting, session handoff between agents, and encrypted session restore
+- Security first: strict host-key trust, OS credential stores, a master-password vault, sensitive-clipboard protection, and encrypted backups (Argon2id + XChaCha20-Poly1305)
+- Lattice Remote: one-time pairing, E2E-encrypted screen sharing with per-permission input control, and self-hosted relay support
+
+### [MQTTape](https://github.com/NickYCLin/mqttape) — MQTT Capture, Inspect & Replay
+
+An open-source MQTT 3.1.1/5.0 debugging tool for desktop and browser ([Web Lite](https://nickyclin.github.io/mqttape/)), MIT-licensed with CI and versioned releases.
+
+- Searchable message timeline, topic tree, QoS packet-flow view, and MQTT 5 property inspection
+- JSON, Hex, CBOR, Protobuf, and Sparkplug B payload decoding, plus LoRaWAN helpers for The Things Stack and ChirpStack
+- Portable capture files with sensitive-data trimming and safe replay against another broker
+- Up to 8 isolated broker sessions over TCP, TLS, WebSocket, and Secure WebSocket
+
+### [StoryVoice](https://github.com/NickYCLin/story-voice) — AI Story Director
 
 An AI audiobook production platform that turns authorized EPUB/TXT content into structured, multi-character narration workflows.
 
@@ -25,6 +44,13 @@ An AI audiobook production platform that turns authorized EPUB/TXT content into 
 - Owner-scoped books, collections, sharing, voice casting, job recovery, and private audio streaming
 - EPUB/TXT parsing, deterministic dialogue segmentation, configurable neural voices, tests, CI, and Docker Compose
 - Designed around explicit content rights, data isolation, bounded external services, and honest feature status
+
+### More public work
+
+- [LearnMore](https://github.com/NickYCLin/learnmore) — Japanese listening & sing-along practice with synced lyrics, Ruby annotations, romaji, zh-TW translations, karaoke mode, and Whisper transcription
+- [VowBook](https://github.com/NickYCLin/vowbook) — collaborative wedding-planning app (guests, seating, tasks, budget) built with Next.js and PostgreSQL
+- [EXE Blueprint](https://github.com/NickYCLin/exe-blueprint) — cross-platform static analyzer for Windows PE/.NET binaries: metadata, IL, dependencies, WPF BAML, and reconstruction scaffolds
+- [remittance-demo](https://github.com/NickYCLin/remittance-demo) — batch-remittance sample in .NET 8 and Vue 3 demonstrating cancellation, status checks, and idempotency
 
 ## Selected engineering experience
 
@@ -47,6 +73,7 @@ Most client and operational repositories are private. The summaries above descri
 
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
@@ -59,7 +86,9 @@ Most client and operational repositories are private. The summaries above descri
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white)
 ![Cesium](https://img.shields.io/badge/CesiumJS-6CADDF?style=flat-square&logo=cesium&logoColor=white)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white)
@@ -82,6 +111,7 @@ Most client and operational repositories are private. The summaries above descri
 
 ## Current focus
 
+- Open-source developer tools: LatticeTerm and MQTTape
 - Applied AI with clear human control and verifiable sources
 - Secure enterprise knowledge systems and Model Context Protocol integrations
 - AI voice, avatar, and multimodal product workflows
