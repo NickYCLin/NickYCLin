@@ -1,62 +1,139 @@
 # Nick Lin 林洋琛
 
-你好，我是 Nick，目前在逢甲大學地理資訊系統研究中心工作。
+你好，我是 Nick，目前在逢甲大學地理資訊系統研究中心工作。平常做 GIS、水情與防災相關系統，寫前後端、串感測資料，也處理資料庫、部署和既有系統的維護。
 
-工作上主要做 GIS、水情與防災相關系統，從地圖介面、感測資料串接，到後端 API、資料庫和部署都會碰。除了開發新功能，也花不少時間維護既有系統、追資料問題，讓不同年代的程式能繼續一起運作。
+這裡放的是我做的開源工具和應用。最近主要在做 **LatticeTerm** 和 **MQTTape**。
 
-這裡放的是我做的開源專案，有開發工具，也有有聲書、語言學習和婚宴規劃。最近主要在做 LatticeTerm 和 MQTTape。
+I'm a software developer in Taiwan, working on GIS and monitoring systems. I also build the open-source tools and apps below.
 
-[English](#english)
+[作品 Projects](#projects) &nbsp; · &nbsp; [平常用的技術](#toolbox) &nbsp; · &nbsp; [More about me in English](#english)
 
-## 最近在做的專案
+<a name="projects"></a>
 
-### [LatticeTerm](https://github.com/NickYCLin/lattice-term)
+## 做過的工具與應用
 
-把本機 AI CLI 和 SSH、SFTP、RDP、VNC 放在同一個桌面工作區，可以一邊跑 coding agent，一邊操作遠端主機。用 Rust、Tauri 和 React 開發，支援 Windows、macOS、Linux，也有加密保管庫、遠端分享與工作階段還原。
+<table>
+<tr>
+<td width="50%" valign="top">
 
-[下載版本](https://github.com/NickYCLin/lattice-term/releases)
+<h3><a href="https://github.com/NickYCLin/lattice-term"><img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/terminal.svg" width="28" height="28" alt=""> LatticeTerm</a></h3>
 
-### [MQTTape](https://github.com/NickYCLin/mqttape)
+**AI CLI 與遠端連線工作區**
 
-用來檢查 MQTT 訊息、看 Topic 和封包流程，也能把流量存下來重播。除了 JSON，也支援 CBOR、Protobuf、Sparkplug B 等格式。桌面版用 Electron 和 React，另有可以直接開啟的 [Web Lite](https://nickyclin.github.io/mqttape/)。
+把本機 AI CLI 和 SSH、SFTP、RDP、VNC 放在一起，可以一邊跑 coding agent，一邊操作遠端主機。也有加密保管庫與工作階段還原。
 
-### [StoryVoice](https://github.com/NickYCLin/story-voice)
+<sub>A desktop workspace for AI coding agents and remote connections.</sub>
 
-把 EPUB、TXT 做成多角色有聲書。可以檢查角色、調整誰在說話、安排聲線，再交給 TTS 產生音訊；中途失敗的工作可以接著處理。後端是 ASP.NET Core，前端用 React，搭配 PostgreSQL。
+`Rust` `Tauri` `React`
 
-### [EXE Blueprint](https://github.com/NickYCLin/exe-blueprint)
+[原始碼](https://github.com/NickYCLin/lattice-term) · [下載](https://github.com/NickYCLin/lattice-term/releases)
 
-不用執行 EXE 或 DLL，就能查看 PE、.NET metadata、IL、相依關係與 WPF BAML，輸出報告和程式重建骨架。用 C#、.NET 和 Avalonia 開發，有桌面介面與 CLI。
+</td>
+<td width="50%" valign="top">
 
-## 其他作品
+<h3><a href="https://github.com/NickYCLin/mqttape"><img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/messages.svg" width="28" height="28" alt=""> MQTTape</a></h3>
 
-- [VowBook 誓約簿](https://github.com/NickYCLin/vowbook)：和伴侶或婚顧一起管理賓客、桌次、預算與婚禮流程，使用 Next.js、PostgreSQL。
-- [LearnMore](https://github.com/NickYCLin/learnmore)：用日文歌曲練聽力與跟唱，整合同步歌詞、漢字注音、羅馬拼音、中文翻譯與 Whisper 轉錄。
+**MQTT 訊息檢查與流量重播**
+
+看 Topic、訊息內容和封包流程，把流量存下來再重播。支援 JSON、CBOR、Protobuf、Sparkplug B，有桌面版和瀏覽器版本。
+
+<sub>Inspect, record, and replay MQTT traffic on desktop or web.</sub>
+
+`TypeScript` `React` `Electron`
+
+[原始碼](https://github.com/NickYCLin/mqttape) · [試用 Web Lite](https://nickyclin.github.io/mqttape/)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3><a href="https://github.com/NickYCLin/story-voice"><img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/voice.svg" width="28" height="28" alt=""> StoryVoice</a></h3>
+
+**多角色有聲書製作**
+
+把 EPUB、TXT 做成有聲書。先檢查角色、調整說話者與聲線，再用 TTS 產生音訊；中途失敗的工作可以接著處理。
+
+<sub>Multi-character audiobooks with voice casting and human review.</sub>
+
+`ASP.NET Core` `React` `PostgreSQL`
+
+[原始碼](https://github.com/NickYCLin/story-voice) · [功能現況](https://github.com/NickYCLin/story-voice/blob/main/docs/PROJECT_STATUS.md)
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://github.com/NickYCLin/exe-blueprint"><img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/binary.svg" width="28" height="28" alt=""> EXE Blueprint</a></h3>
+
+**EXE / DLL 靜態分析**
+
+不用執行目標程式，就能查看 PE、.NET metadata、IL、相依關係與 WPF BAML。可輸出報告與重建骨架，有桌面介面和 CLI。
+
+<sub>Inspect Windows binaries and export reports without running them.</sub>
+
+`C#` `.NET` `Avalonia`
+
+[原始碼](https://github.com/NickYCLin/exe-blueprint) · [下載](https://github.com/NickYCLin/exe-blueprint/releases)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3><a href="https://github.com/NickYCLin/vowbook"><img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/planner.svg" width="28" height="28" alt=""> VowBook 誓約簿</a></h3>
+
+**一起整理婚宴大小事**
+
+和伴侶或婚顧共同管理賓客、桌次、預算、任務與婚禮流程。
+
+<sub>A shared wedding planner for couples and wedding planners.</sub>
+
+`Next.js` `TypeScript` `PostgreSQL`
+
+[原始碼與使用說明](https://github.com/NickYCLin/vowbook)
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://github.com/NickYCLin/learnmore"><img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/music.svg" width="28" height="28" alt=""> LearnMore</a></h3>
+
+**用日文歌曲練聽力與跟唱**
+
+同步顯示歌詞、漢字注音、羅馬拼音與中文翻譯，也整合 Whisper 轉錄。
+
+<sub>Practice Japanese with songs, synchronized lyrics, and transcription.</sub>
+
+`ASP.NET Core` `Whisper`
+
+[原始碼與使用說明](https://github.com/NickYCLin/learnmore)
+
+</td>
+</tr>
+</table>
+
+<a name="toolbox"></a>
 
 ## 平常用的技術
 
-後端以 **C# / .NET** 為主，前端多半用 **TypeScript、React**，桌面工具也用 **Rust、Tauri、Electron**。資料庫主要是 PostgreSQL、SQL Server，空間資料與設備串接會用到 CesiumJS 和 MQTT。
-
-另外會用 Docker 部署服務，測試與發版流程搭配 GitHub Actions、GitLab CI 和 Playwright。
+- **後端與資料**：C# / .NET、Python、PostgreSQL、SQL Server、Redis
+- **網頁與桌面**：TypeScript、React、Next.js、Rust、Tauri、Electron
+- **空間資料與設備**：CesiumJS、MQTT
+- **測試與部署**：Docker、GitHub Actions、GitLab CI、Playwright
 
 有些工作專案沒有公開，所以這裡以能分享原始碼的作品為主。如果你有用到這些工具，歡迎到各專案開 issue，告訴我哪裡不好用、遇到什麼問題。
 
----
+<a name="english"></a>
 
-## English
+<details>
+<summary><b>More about me in English</b></summary>
 
 I'm Nick, a software developer at the GIS Research Center, Feng Chia University in Taiwan.
 
 My work involves GIS, water monitoring, and disaster management systems. I work on map interfaces, sensor data, APIs, databases, and deployment, including maintaining older applications alongside newer services.
 
-I also build and maintain the open-source projects listed above:
+The projects above cover developer tools, audiobook production, wedding planning, and language learning. I mostly use C# / .NET and TypeScript / React, with Rust for desktop tooling.
 
-- **[LatticeTerm](https://github.com/NickYCLin/lattice-term)** brings local AI coding agents and remote connections into a desktop workspace.
-- **[MQTTape](https://github.com/NickYCLin/mqttape)** inspects, records, and replays MQTT traffic, with desktop and browser versions.
-- **[StoryVoice](https://github.com/NickYCLin/story-voice)** turns EPUB and TXT files into multi-character audiobooks, with voice casting, human review, and resumable TTS jobs.
-- **[EXE Blueprint](https://github.com/NickYCLin/exe-blueprint)** inspects Windows binaries without running them and exports reports and reconstruction scaffolds.
-- **[VowBook](https://github.com/NickYCLin/vowbook)** is a collaborative wedding planner.
-- **[LearnMore](https://github.com/NickYCLin/learnmore)** is a Japanese song learning app with synchronized lyrics and transcription.
+Some work repositories are private. The public projects here are available to explore, try, and contribute to. Bug reports and feedback are welcome.
 
-I mostly use C# / .NET and TypeScript / React, with Rust for desktop tooling. If you try one of these projects, bug reports and feedback are welcome.
+</details>
 
