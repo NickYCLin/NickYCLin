@@ -1,129 +1,123 @@
-# Hi, I'm Nick Lin 👋
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/header.svg" width="100%" alt="Nick Lin — Software that connects intelligence to the real world. Applied AI / Developer Tools / Geospatial Systems">
+</p>
 
-### Full-stack & Applied AI Engineer · GIS · Disaster Resilience · Automation · Enterprise Software
+<p align="center">
+  <a href="#selected-work--精選作品">Selected work · 精選作品</a> &nbsp; / &nbsp;
+  <a href="#engineering-focus--工程領域">Engineering · 工程領域</a> &nbsp; / &nbsp;
+  <a href="#toolkit--技術工具">Toolkit · 技術工具</a>
+</p>
 
-I build deployable software where **AI, geospatial data, and real-world operations** meet. My work spans modern .NET and React applications, Python AI services, spatial visualization, data platforms, and the careful modernization of production systems.
+# Nick Lin 林洋琛
 
-> 我是一名位於台灣的全端與應用 AI 工程師，專注把 AI、GIS、防災資料與企業需求，落實成安全、可測試、可部署、可維護的產品。
+**Full-stack & Applied AI Engineer · Taiwan**
 
-## What I build
+I build software that connects **AI, developer workflows, and real-world data** — from cross-platform desktop tools to self-hosted voice products and geospatial systems. My work spans the interface, backend, data pipeline, and deployment that make a product usable end to end.
 
-- **Applied AI products** — grounded knowledge assistants, speech and voice workflows, computer vision integrations, and human-reviewable automation.
-- **Open-source developer tools** — a cross-platform terminal & remote-access workspace for AI CLIs, an MQTT capture/replay debugger, and PE/.NET static analysis tooling.
-- **GIS & resilience platforms** — water monitoring, sensor time series, CCTV workflows, disaster-response systems, and 3D geospatial visualization.
-- **IoT & operational automation** — MQTT data flows, observation-station tools, factory monitoring APIs, scheduled jobs, file relays, and health tracking.
-- **Full-stack systems** — ASP.NET Core APIs, React/TypeScript frontends, background workers, authentication, PostgreSQL/SQL Server, and legacy-system modernization.
-- **Production delivery** — Docker Compose, reverse proxies, health checks, CI, automated tests, observability, secure configuration, and repeatable deployment.
+我在逢甲大學地理資訊系統研究中心任職，專注於 **全端開發、AI 應用、GIS 與防災系統**。喜歡把複雜的流程做成好用的工具：從操作介面、後端服務、資料處理，一路做到部署與維運。
 
-## Featured public projects
+## Selected work · 精選作品
 
-### [LatticeTerm](https://github.com/NickYCLin/lattice-term) — AI CLI & Remote Access Workspace
+<table>
+<tr>
+<td width="50%" valign="top">
 
-A cross-platform desktop workspace that unifies local AI coding agents (Codex, Claude Code, Gemini CLI and more) with SSH, SFTP, tunnels, Web RDP, VNC, and end-to-end encrypted remote desktop.
+### [LatticeTerm](https://github.com/NickYCLin/lattice-term)
+**One workspace for AI agents & remote access.**
 
-- Tauri 2, Rust, React, and TypeScript, shipping signed installers for Windows, Linux, and macOS with in-app auto-update
-- AI Agent Fleet: 12 local LLM CLIs in native PTYs, batch prompting, session handoff between agents, and encrypted session restore
-- Security first: strict host-key trust, OS credential stores, a master-password vault, sensitive-clipboard protection, and encrypted backups (Argon2id + XChaCha20-Poly1305)
-- Lattice Remote: one-time pairing, E2E-encrypted screen sharing with per-permission input control, and self-hosted relay support
+把 AI CLI 與遠端連線整合進同一個跨平台桌面工作區。
 
-### [MQTTape](https://github.com/NickYCLin/mqttape) — MQTT Capture, Inspect & Replay
+- Run local AI coding agents alongside SSH, SFTP, RDP, and VNC.
+- Encrypted remote sessions, credential storage, and recoverable workspaces.
 
-An open-source MQTT 3.1.1/5.0 debugging tool for desktop and browser ([Web Lite](https://nickyclin.github.io/mqttape/)), MIT-licensed with CI and versioned releases.
+<sub>Rust · Tauri 2 · React · TypeScript</sub>
 
-- Searchable message timeline, topic tree, QoS packet-flow view, and MQTT 5 property inspection
-- JSON, Hex, CBOR, Protobuf, and Sparkplug B payload decoding, plus LoRaWAN helpers for The Things Stack and ChirpStack
-- Portable capture files with sensitive-data trimming and safe replay against another broker
-- Up to 8 isolated broker sessions over TCP, TLS, WebSocket, and Secure WebSocket
+[Explore →](https://github.com/NickYCLin/lattice-term) · [Releases](https://github.com/NickYCLin/lattice-term/releases)
 
-### [StoryVoice](https://github.com/NickYCLin/story-voice) — AI Story Director
+</td>
+<td width="50%" valign="top">
 
-An AI audiobook production platform that turns authorized EPUB/TXT content into structured, multi-character narration workflows.
+### [MQTTape](https://github.com/NickYCLin/mqttape)
+**Capture traffic. Understand it. Replay it.**
 
-- .NET 10 Clean Architecture with API, Application, Domain, Infrastructure, and Worker layers
-- React 19, TypeScript, Vite, Tailwind CSS, PostgreSQL, and Redis-ready background processing
-- Owner-scoped books, collections, sharing, voice casting, job recovery, and private audio streaming
-- EPUB/TXT parsing, deterministic dialogue segmentation, configurable neural voices, tests, CI, and Docker Compose
-- Designed around explicit content rights, data isolation, bounded external services, and honest feature status
+讓 IoT 訊息看得懂、留得住，也能重現問題的 MQTT 除錯工具。
 
-### More public work
+- Inspect MQTT 3.1.1 / 5.0 traffic, topic trees, and QoS packet flows.
+- Decode binary payloads and preview captured traffic before replay.
 
-- [LearnMore](https://github.com/NickYCLin/learnmore) — Japanese listening & sing-along practice with synced lyrics, Ruby annotations, romaji, zh-TW translations, karaoke mode, and Whisper transcription
-- [VowBook](https://github.com/NickYCLin/vowbook) — collaborative wedding-planning app (guests, seating, tasks, budget) built with Next.js and PostgreSQL
-- [EXE Blueprint](https://github.com/NickYCLin/exe-blueprint) — cross-platform static analyzer for Windows PE/.NET binaries: metadata, IL, dependencies, WPF BAML, and reconstruction scaffolds
-- [remittance-demo](https://github.com/NickYCLin/remittance-demo) — batch-remittance sample in .NET 8 and Vue 3 demonstrating cancellation, status checks, and idempotency
+<sub>TypeScript · React · Electron · MQTT</sub>
 
-## Selected engineering experience
+[Explore →](https://github.com/NickYCLin/mqttape) · [Try Web Lite](https://nickyclin.github.io/mqttape/)
 
-| Area | What I work on |
-| --- | --- |
-| Enterprise knowledge | Permission-aware document retrieval, grounded answers with sources, MCP services, private document isolation, and auditable write-back flows |
-| Water & disaster resilience | Rainfall and water-level monitoring, drainage and sewer workflows, flow-control review, operational dashboards, forecast timelines, and 2D/3D GIS |
-| IoT & field operations | Observation-station tools, MQTT pipelines, CCTV acquisition and health checks, factory monitoring, relays, scheduled jobs, and failure notifications |
-| Computer vision & AI media | Image analysis and processing, agricultural AI integration, talking avatars, TTS, voice profiles, queued processing, provider fallbacks, and retention controls |
-| Data systems | PostgreSQL and SQL Server, time-series sensor data, migration design, CSV interoperability, encoding repair, and access-controlled APIs |
-| Platform engineering | Containerized services, reverse-proxy deployment, health/readiness checks, performance testing, CI pipelines, and safe release workflows |
-| Legacy modernization | Incremental improvement of ASP.NET Web Forms/MVC applications while preserving existing contracts and production behavior |
-| Interactive applications | React/TypeScript interfaces, Unity mobile prototypes and tools, spatial interaction, responsive dashboards, and browser automation tests |
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Most client and operational repositories are private. The summaries above describe engineering scope without exposing customer names, production data, credentials, internal URLs, or proprietary source code.
+### [StoryVoice](https://github.com/NickYCLin/story-voice)
+**From written stories to directed audio.**
 
-## Technology stack
+自架式多角色有聲書工作流，串起角色分析、配音編排與人工審核。
 
-### Backend & data
+- Turn authorized EPUB / TXT content into character-aware speech plans.
+- Review voice assignments and resume interrupted TTS production.
 
-![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
+<sub>ASP.NET Core · React · PostgreSQL · Docker</sub>
 
-### Frontend & spatial
+[Explore →](https://github.com/NickYCLin/story-voice) · [Project status](https://github.com/NickYCLin/story-voice/blob/main/docs/PROJECT_STATUS.md)
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white)
-![Cesium](https://img.shields.io/badge/CesiumJS-6CADDF?style=flat-square&logo=cesium&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white)
+</td>
+<td width="50%" valign="top">
 
-### Delivery & quality
+### [EXE Blueprint](https://github.com/NickYCLin/exe-blueprint)
+**Make unfamiliar binaries understandable.**
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
-![OpenAPI](https://img.shields.io/badge/OpenAPI-6BA539?style=flat-square&logo=openapiinitiative&logoColor=white)
+不用執行目標程式，就能整理 Windows EXE / DLL 的結構與相依關係。
 
-## How I work
+- Inspect PE / .NET metadata, IL, call graphs, and WPF BAML.
+- Export structured reports and reconstruction scaffolds for further analysis.
 
-- Trace failures through the actual API, query, job, file, network boundary, or deployment state.
-- Treat authorization, secrets, data ownership, retention, and recovery as product requirements.
-- Keep architecture documentation and project status aligned with working code.
-- Validate changes with focused tests, builds, browser checks, health probes, and CI.
-- Prefer incremental modernization and explicit contracts over risky rewrites.
+<sub>C# · .NET · Avalonia · Static Analysis</sub>
 
-## Current focus
+[Explore →](https://github.com/NickYCLin/exe-blueprint) · [Releases](https://github.com/NickYCLin/exe-blueprint/releases)
 
-- Open-source developer tools: LatticeTerm and MQTTape
-- Applied AI with clear human control and verifiable sources
-- Secure enterprise knowledge systems and Model Context Protocol integrations
-- AI voice, avatar, and multimodal product workflows
-- GIS and digital-twin interfaces for operational decision support
-- Reliable delivery across modern and legacy environments
+</td>
+</tr>
+</table>
 
-## Connect
+**Also building · 更多作品**
 
-- GitHub: [@NickYCLin](https://github.com/NickYCLin)
-- Interested in collaboration around applied AI, GIS, resilient systems, and practical software modernization
+- **[VowBook 誓約簿](https://github.com/NickYCLin/vowbook)** — Collaborative wedding planning: guests, seating, budgets, and timelines. 把婚宴籌備整理成可共同維護的工作區。
+- **[LearnMore](https://github.com/NickYCLin/learnmore)** — Japanese song learning with synchronized lyrics, furigana, and Whisper transcription. 用日文歌曲練聽力、閱讀與跟唱。
+
+## Engineering focus · 工程領域
+
+| Focus | What I bring to a project |
+| :--- | :--- |
+| **Applied AI / AI 應用** | Human-reviewable workflows, speech pipelines, and source-grounded knowledge retrieval. 讓 AI 結果可以檢查、修正並接進實際流程。 |
+| **GIS & IoT / 空間與感測資料** | Water monitoring, sensor time series, MQTT, and 2D / 3D spatial interfaces. 串起現場資料、地圖與監測操作。 |
+| **Full-stack systems / 全端系統** | APIs, interactive applications, background jobs, and data models. 從使用者操作一路處理到服務與資料。 |
+| **Delivery & modernization / 交付與維護** | Automated checks, containers, release workflows, and incremental legacy modernization. 兼顧新功能、既有行為與後續維護。 |
+
+## Toolkit · 技術工具
+
+**Languages** &nbsp; `C#` `TypeScript` `Rust` `Python` `SQL`<br>
+**Applications** &nbsp; `ASP.NET Core` `React` `Next.js` `Tauri` `Electron`<br>
+**Data & spatial** &nbsp; `PostgreSQL` `SQL Server` `Redis` `MQTT` `CesiumJS`<br>
+**Delivery** &nbsp; `Docker` `GitHub Actions` `GitLab CI` `Playwright`
+
+## How I build · 我的開發方式
+
+**Start with the workflow.** 先理解誰會使用、要完成什麼，再決定介面、架構與工具。
+
+**Make the hard parts inspectable.** 讓資料流、權限、背景任務與失敗原因可以被追蹤，讓 AI 產出保留人工判斷的空間。
+
+**Own the path to delivery.** 把測試、部署、更新與故障復原納入開發；持續改善既有系統，也把反覆遇到的問題做成開源工具。
 
 ---
 
-<sub>Public repositories show selected work. Some production and client systems remain private by design.</sub>
+**Let's build something useful. 一起把想法做成好用的產品。**<br>
+Interested in applied AI, developer tools, and geospatial systems? Explore the projects above — ideas, issues, and contributions are welcome.
+
+<sub>This profile highlights public work. Client and operational systems are summarized at the domain level.</sub>
 
