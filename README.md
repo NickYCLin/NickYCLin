@@ -1,123 +1,62 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/NickYCLin/NickYCLin/main/assets/header.svg" width="100%" alt="Nick Lin — Software that connects intelligence to the real world. Applied AI / Developer Tools / Geospatial Systems">
-</p>
-
-<p align="center">
-  <a href="#selected-work--精選作品">Selected work · 精選作品</a> &nbsp; / &nbsp;
-  <a href="#engineering-focus--工程領域">Engineering · 工程領域</a> &nbsp; / &nbsp;
-  <a href="#toolkit--技術工具">Toolkit · 技術工具</a>
-</p>
-
 # Nick Lin 林洋琛
 
-**Full-stack & Applied AI Engineer · Taiwan**
+你好，我是 Nick，目前在逢甲大學地理資訊系統研究中心工作。
 
-I build software that connects **AI, developer workflows, and real-world data** — from cross-platform desktop tools to self-hosted voice products and geospatial systems. My work spans the interface, backend, data pipeline, and deployment that make a product usable end to end.
+工作上主要做 GIS、水情與防災相關系統，從地圖介面、感測資料串接，到後端 API、資料庫和部署都會碰。除了開發新功能，也花不少時間維護既有系統、追資料問題，讓不同年代的程式能繼續一起運作。
 
-我在逢甲大學地理資訊系統研究中心任職，專注於 **全端開發、AI 應用、GIS 與防災系統**。喜歡把複雜的流程做成好用的工具：從操作介面、後端服務、資料處理，一路做到部署與維運。
+這裡放的是我做的開源專案，有開發工具，也有有聲書、語言學習和婚宴規劃。最近主要在做 LatticeTerm 和 MQTTape。
 
-## Selected work · 精選作品
+[English](#english)
 
-<table>
-<tr>
-<td width="50%" valign="top">
+## 最近在做的專案
 
 ### [LatticeTerm](https://github.com/NickYCLin/lattice-term)
-**One workspace for AI agents & remote access.**
 
-把 AI CLI 與遠端連線整合進同一個跨平台桌面工作區。
+把本機 AI CLI 和 SSH、SFTP、RDP、VNC 放在同一個桌面工作區，可以一邊跑 coding agent，一邊操作遠端主機。用 Rust、Tauri 和 React 開發，支援 Windows、macOS、Linux，也有加密保管庫、遠端分享與工作階段還原。
 
-- Run local AI coding agents alongside SSH, SFTP, RDP, and VNC.
-- Encrypted remote sessions, credential storage, and recoverable workspaces.
-
-<sub>Rust · Tauri 2 · React · TypeScript</sub>
-
-[Explore →](https://github.com/NickYCLin/lattice-term) · [Releases](https://github.com/NickYCLin/lattice-term/releases)
-
-</td>
-<td width="50%" valign="top">
+[下載版本](https://github.com/NickYCLin/lattice-term/releases)
 
 ### [MQTTape](https://github.com/NickYCLin/mqttape)
-**Capture traffic. Understand it. Replay it.**
 
-讓 IoT 訊息看得懂、留得住，也能重現問題的 MQTT 除錯工具。
-
-- Inspect MQTT 3.1.1 / 5.0 traffic, topic trees, and QoS packet flows.
-- Decode binary payloads and preview captured traffic before replay.
-
-<sub>TypeScript · React · Electron · MQTT</sub>
-
-[Explore →](https://github.com/NickYCLin/mqttape) · [Try Web Lite](https://nickyclin.github.io/mqttape/)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+用來檢查 MQTT 訊息、看 Topic 和封包流程，也能把流量存下來重播。除了 JSON，也支援 CBOR、Protobuf、Sparkplug B 等格式。桌面版用 Electron 和 React，另有可以直接開啟的 [Web Lite](https://nickyclin.github.io/mqttape/)。
 
 ### [StoryVoice](https://github.com/NickYCLin/story-voice)
-**From written stories to directed audio.**
 
-自架式多角色有聲書工作流，串起角色分析、配音編排與人工審核。
-
-- Turn authorized EPUB / TXT content into character-aware speech plans.
-- Review voice assignments and resume interrupted TTS production.
-
-<sub>ASP.NET Core · React · PostgreSQL · Docker</sub>
-
-[Explore →](https://github.com/NickYCLin/story-voice) · [Project status](https://github.com/NickYCLin/story-voice/blob/main/docs/PROJECT_STATUS.md)
-
-</td>
-<td width="50%" valign="top">
+把 EPUB、TXT 做成多角色有聲書。可以檢查角色、調整誰在說話、安排聲線，再交給 TTS 產生音訊；中途失敗的工作可以接著處理。後端是 ASP.NET Core，前端用 React，搭配 PostgreSQL。
 
 ### [EXE Blueprint](https://github.com/NickYCLin/exe-blueprint)
-**Make unfamiliar binaries understandable.**
 
-不用執行目標程式，就能整理 Windows EXE / DLL 的結構與相依關係。
+不用執行 EXE 或 DLL，就能查看 PE、.NET metadata、IL、相依關係與 WPF BAML，輸出報告和程式重建骨架。用 C#、.NET 和 Avalonia 開發，有桌面介面與 CLI。
 
-- Inspect PE / .NET metadata, IL, call graphs, and WPF BAML.
-- Export structured reports and reconstruction scaffolds for further analysis.
+## 其他作品
 
-<sub>C# · .NET · Avalonia · Static Analysis</sub>
+- [VowBook 誓約簿](https://github.com/NickYCLin/vowbook)：和伴侶或婚顧一起管理賓客、桌次、預算與婚禮流程，使用 Next.js、PostgreSQL。
+- [LearnMore](https://github.com/NickYCLin/learnmore)：用日文歌曲練聽力與跟唱，整合同步歌詞、漢字注音、羅馬拼音、中文翻譯與 Whisper 轉錄。
 
-[Explore →](https://github.com/NickYCLin/exe-blueprint) · [Releases](https://github.com/NickYCLin/exe-blueprint/releases)
+## 平常用的技術
 
-</td>
-</tr>
-</table>
+後端以 **C# / .NET** 為主，前端多半用 **TypeScript、React**，桌面工具也用 **Rust、Tauri、Electron**。資料庫主要是 PostgreSQL、SQL Server，空間資料與設備串接會用到 CesiumJS 和 MQTT。
 
-**Also building · 更多作品**
+另外會用 Docker 部署服務，測試與發版流程搭配 GitHub Actions、GitLab CI 和 Playwright。
 
-- **[VowBook 誓約簿](https://github.com/NickYCLin/vowbook)** — Collaborative wedding planning: guests, seating, budgets, and timelines. 把婚宴籌備整理成可共同維護的工作區。
-- **[LearnMore](https://github.com/NickYCLin/learnmore)** — Japanese song learning with synchronized lyrics, furigana, and Whisper transcription. 用日文歌曲練聽力、閱讀與跟唱。
-
-## Engineering focus · 工程領域
-
-| Focus | What I bring to a project |
-| :--- | :--- |
-| **Applied AI / AI 應用** | Human-reviewable workflows, speech pipelines, and source-grounded knowledge retrieval. 讓 AI 結果可以檢查、修正並接進實際流程。 |
-| **GIS & IoT / 空間與感測資料** | Water monitoring, sensor time series, MQTT, and 2D / 3D spatial interfaces. 串起現場資料、地圖與監測操作。 |
-| **Full-stack systems / 全端系統** | APIs, interactive applications, background jobs, and data models. 從使用者操作一路處理到服務與資料。 |
-| **Delivery & modernization / 交付與維護** | Automated checks, containers, release workflows, and incremental legacy modernization. 兼顧新功能、既有行為與後續維護。 |
-
-## Toolkit · 技術工具
-
-**Languages** &nbsp; `C#` `TypeScript` `Rust` `Python` `SQL`<br>
-**Applications** &nbsp; `ASP.NET Core` `React` `Next.js` `Tauri` `Electron`<br>
-**Data & spatial** &nbsp; `PostgreSQL` `SQL Server` `Redis` `MQTT` `CesiumJS`<br>
-**Delivery** &nbsp; `Docker` `GitHub Actions` `GitLab CI` `Playwright`
-
-## How I build · 我的開發方式
-
-**Start with the workflow.** 先理解誰會使用、要完成什麼，再決定介面、架構與工具。
-
-**Make the hard parts inspectable.** 讓資料流、權限、背景任務與失敗原因可以被追蹤，讓 AI 產出保留人工判斷的空間。
-
-**Own the path to delivery.** 把測試、部署、更新與故障復原納入開發；持續改善既有系統，也把反覆遇到的問題做成開源工具。
+有些工作專案沒有公開，所以這裡以能分享原始碼的作品為主。如果你有用到這些工具，歡迎到各專案開 issue，告訴我哪裡不好用、遇到什麼問題。
 
 ---
 
-**Let's build something useful. 一起把想法做成好用的產品。**<br>
-Interested in applied AI, developer tools, and geospatial systems? Explore the projects above — ideas, issues, and contributions are welcome.
+## English
 
-<sub>This profile highlights public work. Client and operational systems are summarized at the domain level.</sub>
+I'm Nick, a software developer at the GIS Research Center, Feng Chia University in Taiwan.
+
+My work involves GIS, water monitoring, and disaster management systems. I work on map interfaces, sensor data, APIs, databases, and deployment, including maintaining older applications alongside newer services.
+
+I also build and maintain the open-source projects listed above:
+
+- **[LatticeTerm](https://github.com/NickYCLin/lattice-term)** brings local AI coding agents and remote connections into a desktop workspace.
+- **[MQTTape](https://github.com/NickYCLin/mqttape)** inspects, records, and replays MQTT traffic, with desktop and browser versions.
+- **[StoryVoice](https://github.com/NickYCLin/story-voice)** turns EPUB and TXT files into multi-character audiobooks, with voice casting, human review, and resumable TTS jobs.
+- **[EXE Blueprint](https://github.com/NickYCLin/exe-blueprint)** inspects Windows binaries without running them and exports reports and reconstruction scaffolds.
+- **[VowBook](https://github.com/NickYCLin/vowbook)** is a collaborative wedding planner.
+- **[LearnMore](https://github.com/NickYCLin/learnmore)** is a Japanese song learning app with synchronized lyrics and transcription.
+
+I mostly use C# / .NET and TypeScript / React, with Rust for desktop tooling. If you try one of these projects, bug reports and feedback are welcome.
 
