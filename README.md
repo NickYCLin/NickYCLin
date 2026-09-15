@@ -52,9 +52,9 @@ I'm a software developer in Taiwan, working on GIS and monitoring systems. I als
 
 **免費的多資料庫管理工具**（與 [羽山秋人](https://github.com/shadowjohn) 合作）
 
-一個介面連 MySQL / MariaDB、PostgreSQL、SQL Server、SQLite、Oracle、MongoDB、Redis 與 Snowflake。專案由羽山秋人發起，2026 年 5 月起我負責大部分的開發：Table Designer、Avalonia 跨平台版、TLS 與 SSH Tunnel 連線安全、AI SQL 助理、測試與發版流程。
+一個介面連 MySQL / MariaDB、PostgreSQL、SQL Server、SQLite、Oracle、MongoDB、Redis 與 Snowflake。專案由羽山秋人發起，我從 2026 年 5 月起加入一起開發，經手的部分有 Table Designer、Avalonia 跨平台版（Linux / macOS）、TLS 與 SSH Tunnel 連線安全、AI SQL 助理，以及測試與發版流程。
 
-<sub>A free database GUI and DBA workbench for Windows, with a Linux / macOS preview. Co-maintained; most recent development is mine.</sub>
+<sub>A free database GUI and DBA workbench for Windows, with a Linux / macOS preview. Co-developed with its original author; my parts include the cross-platform build, connection security, the AI SQL assistant, and the test / release pipeline.</sub>
 
 `C#` `WinForms` `Avalonia`
 
@@ -205,7 +205,7 @@ I'm Nick, a software developer at the GIS Research Center, Feng Chia University 
 
 My work involves GIS, water monitoring, and disaster management systems. I work on map interfaces, sensor data, APIs, databases, and deployment, including maintaining older applications alongside newer services.
 
-The projects above cover developer tools, database tooling, security reporting, audiobook production, wedding planning, language learning, and a couple of game prototypes. I mostly use C# / .NET and TypeScript / React, with Rust for desktop tooling. mySQLPunk is a collaboration with its original author; since May 2026 I have been doing most of the development, including the cross-platform Avalonia build.
+The projects above cover developer tools, database tooling, security reporting, audiobook production, wedding planning, language learning, and a couple of game prototypes. I mostly use C# / .NET and TypeScript / React, with Rust for desktop tooling. mySQLPunk is a collaboration with its original author; since May 2026 I have been contributing features such as the cross-platform Avalonia build, connection security, and the release pipeline.
 
 Some work repositories are private. The public projects here are available to explore, try, and contribute to. Bug reports and feedback are welcome.
 
